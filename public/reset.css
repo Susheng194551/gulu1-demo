@@ -5,8 +5,8 @@
 }
 
 :root {
-    --button-height: 32px;
-    --font-size: 14px;
+    --button-height: 41px;
+    --font-size: 16px;
     --button-bg: white;
     --button-active-bg:#eee;
     --border-radius:4px;
@@ -19,3 +19,4 @@
     margin:20px;
 }
 body{font-size: var(--font-size);}
+.icon{width: 1em;height: 1em}

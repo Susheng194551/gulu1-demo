@@ -18,7 +18,4 @@ export default {
 
 <style lang="scss">
 @import "../public/reset.css";
-
-
-.icon{width: 1em;height: 1em}
 </style>
