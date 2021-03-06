@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Button />
+    <Button>按钮</Button>
+    <Button icon="setting">按钮</Button>
+    <Button icon="setting" icon-position="right">按钮</Button>
   </div>
 </template>
 
@@ -16,12 +18,7 @@ export default {
 
 <style lang="scss">
 @import "../public/reset.css";
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+
+.icon{width: 1em;height: 1em}
 </style>
