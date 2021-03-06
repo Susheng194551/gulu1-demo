@@ -3,6 +3,7 @@
     <Button>按钮</Button>
     <Button icon="setting">按钮</Button>
     <Button icon="setting" icon-position="right">按钮</Button>
+    <svg class="g-icon"><use xlink:href="#idownload"></use></svg>
   </div>
 </template>
 
