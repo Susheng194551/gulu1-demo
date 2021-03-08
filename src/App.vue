@@ -3,7 +3,11 @@
     <Button :loading="loading1" @click="loading1=!loading1">按钮</Button>
     <Button icon="setting" :loading="loading2" @click="loading2=!loading2">按钮</Button>
     <Button icon="setting" icon-position="right" :loading="loading3" @click="loading3=!loading3">按钮</Button>
-    <svg class="g-icon"><use xlink:href="#idownload"></use></svg>
+    <Button-group>
+      <Button icon="left">上一页</Button>
+      <Button>更多</Button>
+    <Button icon="right" icon-position="right">下一页</Button>
+    </Button-group>
   </div>
 </template>
 
