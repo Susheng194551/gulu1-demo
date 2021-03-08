@@ -7,3 +7,4 @@ Vue.component('g-icon',Icon)
 new Vue({
   render: h => h(App),
 }).$mount('#app')
+

@@ -1,19 +1,29 @@
 <template>
   <div id="app">
-    <Button>按钮</Button>
-    <Button icon="setting">按钮</Button>
-    <Button icon="setting" icon-position="right">按钮</Button>
+    <Button :loading="loading1" @click="loading1=!loading1">按钮</Button>
+    <Button icon="setting" :loading="loading2" @click="loading2=!loading2">按钮</Button>
+    <Button icon="setting" icon-position="right" :loading="loading3" @click="loading3=!loading3">按钮</Button>
     <svg class="g-icon"><use xlink:href="#idownload"></use></svg>
   </div>
 </template>
 
 <script>
+
 import Button from './components/button'
+
 export default {
   name: 'App',
+  data:()=>{
+    return{
+      loading1: false,
+      loading2:true,
+      loading3:false
+    }
+  },
   components:{
     Button
-  }
+  },
+
 }
 </script>
 
