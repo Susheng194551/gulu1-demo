@@ -10,5 +10,6 @@ Vue.component('Button-group',ButtonGroup)
 Vue.component('g-input',Input)
 new Vue({
   render: h => h(App),
+
 }).$mount('#app')
 

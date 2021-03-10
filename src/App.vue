@@ -6,6 +6,14 @@
     <g-input value="王五"></g-input>
     </div>
     <div class="box">
+      <g-input value="刘" @change="inputChange"></g-input>
+    </div>
+    <div class="box">
+      <g-input  v-model="message"></g-input>
+      <p>{{message}}</p>
+      <button @click="message+=1">+1</button>
+    </div>
+    <div class="box">
     <g-input value="刘" error="姓名不能少于两个字"></g-input>
     </div>
       <div style="margin: 20px">
@@ -32,12 +40,18 @@ export default {
     return{
       loading1: false,
       loading2:true,
-      loading3:false
+      loading3:false,
+      message:'hi'
     }
   },
   components:{
     Button
   },
+  methods:{
+    inputChange(e){
+      console.log(e.target.value)
+    }
+  }
 
 }
 </script>

@@ -1,12 +1,17 @@
 <template>
-<div class="wrapper" :class="{error}"><input :value="value" type="text" :disabled="disable" :readonly="readonly">
+<div class="wrapper" :class="{error}"><input :value="value" type="text" :disabled="disable" :readonly="readonly"
+@change="$emit('change',$event.target.value)"
+@input="$emit('input',$event.target.value)"
+@focus="$emit('focus',$event.target.value)"
+@blur="$emit('blur',$event.target.value)"
+>
   <template v-if="error">
   <icon  name="error" class="icon-error"></icon>
   <span class="errorM">{{error}}</span>
   </template>
 </div>
 </template>
-
+//change是事件名  $event传给这个事件接收者的第一个参数
 <script>
 import Icon from './icon.vue'
 export default {
