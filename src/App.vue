@@ -1,5 +1,15 @@
 <template>
   <div id="app">
+    <div class="box">
+    <g-input value="张三" disable></g-input>
+    <g-input value="李四" readonly></g-input>
+    <g-input value="王五"></g-input>
+    </div>
+    <div class="box">
+    <g-input value="刘" error="姓名不能少于两个字"></g-input>
+    </div>
+      <div style="margin: 20px">
+        <div class="box">
     <Button :loading="loading1" @click="loading1=!loading1">按钮</Button>
     <Button icon="setting" :loading="loading2" @click="loading2=!loading2">按钮</Button>
     <Button icon="setting" icon-position="right" :loading="loading3" @click="loading3=!loading3">按钮</Button>
@@ -8,7 +18,8 @@
       <Button>更多</Button>
     <Button icon="right" icon-position="right">下一页</Button>
     </Button-group>
-  </div>
+        </div>
+  </div></div>
 </template>
 
 <script>

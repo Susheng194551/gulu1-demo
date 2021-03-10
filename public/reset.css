@@ -19,3 +19,6 @@
     margin:20px;
 }
 body{font-size: var(--font-size);}
+.box{
+    margin: 20px;
+}

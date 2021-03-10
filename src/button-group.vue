@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name:"GULUButton-Group",
   mounted(){
     for(let node of this.$el.children){
       let name=node.nodeName.toLowerCase()
@@ -22,7 +23,8 @@ export default {
   vertical-align: middle;
   > .Button-group{
     border-radius: 0;
-    margin-left: -1px;
+    &:not(:first-child){
+    margin-left: -1px;}
   }
   &:first-child{
     border-top-left-radius:var(--border-radius) ;
