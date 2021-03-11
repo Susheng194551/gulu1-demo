@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <g-row>
-      <g-col></g-col>
-      <g-col></g-col>
+    <div style="border: 1px solid black">
+    <g-row gutter="20">
+      <g-col ></g-col>
+      <g-col ></g-col>
     </g-row>
-    <g-row>
-      <g-col></g-col>
-      <g-col></g-col>
-      <g-col></g-col>
-    </g-row>
-    <g-row>
-      <g-col></g-col>
+    <g-row gutter="20">
       <g-col></g-col>
       <g-col></g-col>
       <g-col></g-col>
     </g-row>
-    <g-row>
+    <g-row gutter="20">
+      <g-col></g-col>
+      <g-col></g-col>
+      <g-col></g-col>
+      <g-col></g-col>
+    </g-row>
+    <g-row gutter="20">
       <g-col :span="2"></g-col>
       <g-col :span="22"></g-col>
     </g-row>
-    <g-row>
+    <g-row gutter="20">
       <g-col :span="4"></g-col>
       <g-col :span="20"></g-col>
     </g-row>
+    <g-row gutter="20">
+      <g-col :span="4"></g-col>
+      <g-col :span="18" offset="2" ></g-col>
+    </g-row>
+
+    <g-row gutter="20">
+      <g-col :span="4"></g-col>
+      <g-col :span="8" offset="2" ></g-col>
+      <g-col :span="8" offset="2" ></g-col>
+    </g-row>
+      </div>
     <hr>
     <div class="box">
     <g-input value="张三" disable></g-input>
