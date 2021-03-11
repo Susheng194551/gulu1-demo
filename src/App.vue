@@ -16,8 +16,12 @@
       <g-col></g-col>
     </g-row>
     <g-row>
-      <g-col :span='2'></g-col>
-      <g-col :span='22'></g-col>
+      <g-col :span="2"></g-col>
+      <g-col :span="22"></g-col>
+    </g-row>
+    <g-row>
+      <g-col :span="4"></g-col>
+      <g-col :span="20"></g-col>
     </g-row>
     <hr>
     <div class="box">
@@ -51,7 +55,6 @@
 </template>
 
 <script>
-
 import Button from './components/button'
 
 export default {

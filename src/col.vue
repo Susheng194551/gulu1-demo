@@ -5,10 +5,14 @@
 </template>
 <script>
 export  default {
+  name:'GULUco',
   props:{
     span:{
       type:[Number,String]
     }
+  },
+  mounted(){
+    console.log(this.span)
   }
 }
 </script>
@@ -22,7 +26,7 @@ export  default {
 
   $class-prefix:col-;
   @for $n from 1 through 24{
-    .#{$class-prefix}#{$n}{
+    &.#{$class-prefix}#{$n}{
       width:($n/24)*100%;
     }
   }
