@@ -2,23 +2,16 @@
   <div id="app">
     <div style="border: 1px solid black">
     <g-row gutter="20">
-      <g-col >1</g-col>
-      <g-col >2</g-col>
-    </g-row>
-    <g-row gutter="20">
-      <g-col>1</g-col>
-      <g-col>2</g-col>
-      <g-col>3</g-col>
-    </g-row>
-    <g-row gutter="20">
-      <g-col>1</g-col>
-      <g-col>2</g-col>
-      <g-col>3</g-col>
-      <g-col>4</g-col>
-    </g-row>
-    <g-row gutter="20">
-      <g-col :span="2">1</g-col>
-      <g-col :span="22">2</g-col>
+      <g-col :span="2" :phone="{span:24}"
+      :ipad="{span:8}"
+      :narrow-pc="{span:4}"
+      :pc="{span:2}"
+      :wide-pc="{span:1}">1</g-col>
+      <g-col :span="22" :phone="{span:24}"
+             :ipad="{span:16}"
+             :narrow-pc="{span:20}"
+             :pc="{span:22}"
+             :wide-pc="{span:23}">2</g-col>
     </g-row>
     <g-row gutter="20">
       <g-col :span="4">1</g-col>
@@ -63,7 +56,8 @@
     <Button icon="right" icon-position="right">下一页</Button>
     </Button-group>
         </div>
-  </div></div>
+  </div>
+  </div>
 </template>
 
 <script>

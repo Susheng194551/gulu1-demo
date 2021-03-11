@@ -1,5 +1,5 @@
 <template>
-<div class="row" :style="rowStyle"
+<div class="row" :style="rowStyle" :class="rowStyle"
 >
   <slot></slot>
 </div>
@@ -10,6 +10,12 @@ export default {
   props:{
     gutter:{
       type:[Number,String]
+    },
+    align:{
+      type:String,
+      validator(value){
+        return ['left','right','center'].includes(value)
+      }
     }
   },
   computed:{
@@ -20,6 +26,10 @@ export default {
         marginRight:-gutter/2+'px'
       }
   }
+  },
+  rowClass(){
+    let {align}=this
+    return [align&&`align-{align}`]
   },
   mounted() {
     this.$children.forEach((vm)=>{
@@ -32,6 +42,16 @@ export default {
 <style scoped lang="scss">
 .row{
   display: flex;
+  flex-wrap: wrap;
+  &.align-left{
+    justify-content:flex-start ;
+  }
+  &.align-right{
+    justify-content:flex-end ;
+  }
+  &.align-center{
+    justify-content:center ;
+  }
 }
 </style>
 <!--var div=document.createElement('div')//created 内存里生成对象-->
