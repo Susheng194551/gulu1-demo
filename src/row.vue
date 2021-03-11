@@ -1,5 +1,5 @@
 <template>
-<div class="row" :style="rowStyle" :class="rowStyle"
+<div class="row" :style="rowStyle" :class="rowClass"
 >
   <slot></slot>
 </div>
@@ -25,12 +25,13 @@ export default {
         marginLeft:-gutter/2+'px',
         marginRight:-gutter/2+'px'
       }
-  }
   },
   rowClass(){
-    let {align}=this
-    return [align&&`align-{align}`]
+      let {align}=this
+      return [align&&`align-{align}`]
+    },
   },
+
   mounted() {
     this.$children.forEach((vm)=>{
       vm.gutter=this.gutter

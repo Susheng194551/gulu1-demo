@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <g-row>
+      <g-col span="23" offset="1"   :narrow-pc="{span:12,offset:12}"><div class="demo"></div></g-col>
+    </g-row>
+
     <div style="border: 1px solid black">
     <g-row gutter="20">
       <g-col :span="24"
@@ -87,4 +91,9 @@ export default {
 
 <style lang="scss">
 @import "../public/reset.css";
+.demo{
+  background: #ddd;
+  border: 1px solid #666;
+  height: 100px;
+}
 </style>
