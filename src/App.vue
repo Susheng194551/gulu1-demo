@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <g-layout style="height: 100vh">
-      <g-sider class="demo">sider</g-sider>
+      <g-sider >sider</g-sider>
       <g-layout>
-        <g-header class="demo">header</g-header>
-        <g-content class="demo">content</g-content>
-        <g-footer class="demo">footer</g-footer>
+        <g-header >header</g-header>
+        <g-content >content</g-content>
+        <g-footer >footer</g-footer>
       </g-layout>
     </g-layout>
 <!--    <g-row>-->
@@ -119,4 +119,14 @@ export default {
   border: 1px solid #666;
   min-height: 100px;
 }
+.sider{background: #333;width: 150px}
+.slide.slide-enter, .slide.slide-leave-to{
+  margin-left: -150px;
+}
+.Header{
+  background: #999;
+  height: 100px;
+}
+.Footer{background: #ccc;
+height: 50px}
 </style>
