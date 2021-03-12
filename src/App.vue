@@ -1,5 +1,13 @@
 <template>
   <div id="app">
+    <g-layout style="height: 100vh">
+      <g-sider class="demo">sider</g-sider>
+      <g-layout>
+        <g-header class="demo">header</g-header>
+        <g-content class="demo">content</g-content>
+        <g-footer class="demo">footer</g-footer>
+      </g-layout>
+    </g-layout>
 <!--    <g-row>-->
 <!--      <g-col span="24" :ipad="{span:12}" :narrow-pc="{span:8}">-->
 <!--        <div class="demo"></div>-->
@@ -108,8 +116,7 @@ export default {
 <style lang="scss">
 @import "../public/reset.css";
 .demo{
-  background: #ddd;
   border: 1px solid #666;
-  height: 100px;
+  min-height: 100px;
 }
 </style>

@@ -1,15 +1,13 @@
 <template>
-<div class="content"><solt></solt></div>
+  <div class="Header"><slot></slot></div>
 </template>
 
 <script>
 export default {
-name: "content"
+name: "GULUheader"
 }
 </script>
 
 <style lang="scss" scoped>
-.content{
-
-}
+.Header{}
 </style>

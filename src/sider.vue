@@ -1,13 +1,13 @@
 <template>
-  <div class="sider"><solt></solt></div>
+  <div class="sider"><slot></slot></div>
 </template>
 
 <script>
 export default {
-name: "sider"
+name: "GULUSider"
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .sider{}
 </style>
