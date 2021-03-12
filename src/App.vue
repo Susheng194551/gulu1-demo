@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <button @click="showToast">点我</button>
+    <button @click="showToast1">出来吧! 狗屎郑爽</button>
+    <button @click="showToast2">出来吧！吃屎郑爽</button>
+    <button @click="showToast3">出来吧！垃圾郑爽</button>
 <!--    <g-layout style="height: 100vh">-->
 <!--      <g-sider >sider</g-sider>-->
 <!--      <g-layout>-->
@@ -103,12 +105,34 @@ export default {
     }
   },
   created() {
+
   },
-  methods:{
-    showToast(){
-      this.$toast('我是message')
+
+  methods: {
+    showToast1() {
+      this.showToast('top')
+    },
+    showToast2() {
+      this.showToast('middle')
+    },
+    showToast3() {
+      this.showToast('bottom')
+    },
+    showToast(position) {
+      this.$toast(`世界上谁最傻逼 ${parseInt(Math.random() * 100)}。'郑爽是傻逼'`, {
+        position,
+        enableHtml: false,
+        closeButton: {
+          text: '确实',
+          callback() {
+            console.log('经过证实郑爽确实是傻逼')
+          }
+        },
+        autoClose: false,
+      })
     }
   }
+}
   // components:{
   //   Button
   //  },
@@ -118,10 +142,10 @@ export default {
   //   }
   // }
 
-}
+
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../public/reset.css";
 .demo{
   border: 1px solid #666;
