@@ -1,5 +1,6 @@
 <template>
   <div id="app" style="padding-top:100px;padding-left: 100px ">
+    <div style="overflow: hidden; border: 1px solid green; padding: 5px">
     <g-popover>
       <template slot="content">
         <div>asjkwwwwwwwww</div>
@@ -12,6 +13,7 @@
       </template>
       <button>点我</button>
     </g-popover>
+    </div>
 <!--    <g-tabs :selected.sync="selectedTab" @update:selected="yyy">-->
 <!--      <g-tabs-head>-->
 <!--        <template slot="actions">-->
