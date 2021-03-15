@@ -1,20 +1,32 @@
 <template>
-  <div id="app">
-    <g-tabs :selected.sync="selectedTab" @update:selected="yyy">
-      <g-tabs-head>
-        <template slot="actions">
-          <button>设置</button>
-        </template>
-        <g-tabs-item name="woman"><g-icon name="setting"></g-icon>美女</g-tabs-item>
-        <g-tabs-item name="finance" disabled>财经</g-tabs-item>
-        <g-tabs-item name="sports">体育</g-tabs-item>
-      </g-tabs-head>
-      <g-tabs-body>
-        <g-tabs-pane name="woman">美女相关</g-tabs-pane>
-        <g-tabs-pane name="finance">财经相关</g-tabs-pane>
-        <g-tabs-pane name="sports">体育相关</g-tabs-pane>
-      </g-tabs-body>
-    </g-tabs>
+  <div id="app" style="padding-top:100px;padding-left: 100px ">
+    <g-popover>
+      <template slot="content">
+        <div>asjk</div>
+      </template>
+        <button>点我</button>
+    </g-popover>
+    <g-popover>
+      <template slot="content">
+        <div>sss</div>
+      </template>
+      <button>点我</button>
+    </g-popover>
+<!--    <g-tabs :selected.sync="selectedTab" @update:selected="yyy">-->
+<!--      <g-tabs-head>-->
+<!--        <template slot="actions">-->
+<!--          <button>设置</button>-->
+<!--        </template>-->
+<!--        <g-tabs-item name="woman"><g-icon name="setting"></g-icon>美女</g-tabs-item>-->
+<!--        <g-tabs-item name="finance" disabled>财经</g-tabs-item>-->
+<!--        <g-tabs-item name="sports">体育</g-tabs-item>-->
+<!--      </g-tabs-head>-->
+<!--      <g-tabs-body>-->
+<!--        <g-tabs-pane name="woman">美女相关</g-tabs-pane>-->
+<!--        <g-tabs-pane name="finance">财经相关</g-tabs-pane>-->
+<!--        <g-tabs-pane name="sports">体育相关</g-tabs-pane>-->
+<!--      </g-tabs-body>-->
+<!--    </g-tabs>-->
 <!--    <button @click="showToast1">出来吧! 狗屎郑爽</button>-->
 <!--    <button @click="showToast2">出来吧！吃屎郑爽</button>-->
 <!--    <button @click="showToast3">出来吧！垃圾郑爽</button>-->
