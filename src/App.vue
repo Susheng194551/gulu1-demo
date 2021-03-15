@@ -1,6 +1,6 @@
 <template>
   <div id="app" style="padding-top:100px;padding-left: 100px ">
-    <g-popover>
+    <g-popover position="bottom">
       <template slot="content">
         <div>popover内容popover内容</div>
       </template>
@@ -9,6 +9,18 @@
     <g-popover>
       <template slot="content">
         <div>ssssssssssssssssssssssssssssssssssssssssssss</div>
+      </template>
+      <Button>点我</Button>
+    </g-popover>
+    <g-popover position="left">
+      <template slot="content">
+        <div>popover内容popover内容</div>
+      </template>
+      <Button>点我</Button>
+    </g-popover>
+    <g-popover position="right">
+      <template slot="content">
+        <div>popover内容popover内容</div>
       </template>
       <Button>点我</Button>
     </g-popover>
