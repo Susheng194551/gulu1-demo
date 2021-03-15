@@ -1,8 +1,23 @@
 <template>
   <div id="app">
-    <button @click="showToast1">出来吧! 狗屎郑爽</button>
-    <button @click="showToast2">出来吧！吃屎郑爽</button>
-    <button @click="showToast3">出来吧！垃圾郑爽</button>
+    <g-tabs :selected.sync="selectedTab" @update:selected="yyy">
+      <g-tabs-head>
+        <template slot="actions">
+          <button>设置</button>
+        </template>
+        <g-tabs-item name="woman"><g-icon name="setting"></g-icon>美女</g-tabs-item>
+        <g-tabs-item name="finance" disabled>财经</g-tabs-item>
+        <g-tabs-item name="sports">体育</g-tabs-item>
+      </g-tabs-head>
+      <g-tabs-body>
+        <g-tabs-pane name="woman">美女相关</g-tabs-pane>
+        <g-tabs-pane name="finance">财经相关</g-tabs-pane>
+        <g-tabs-pane name="sports">体育相关</g-tabs-pane>
+      </g-tabs-body>
+    </g-tabs>
+<!--    <button @click="showToast1">出来吧! 狗屎郑爽</button>-->
+<!--    <button @click="showToast2">出来吧！吃屎郑爽</button>-->
+<!--    <button @click="showToast3">出来吧！垃圾郑爽</button>-->
 <!--    <g-layout style="height: 100vh">-->
 <!--      <g-sider >sider</g-sider>-->
 <!--      <g-layout>-->
@@ -98,10 +113,11 @@ export default {
   name: 'App',
   data:()=>{
     return{
-      loading1: false,
-      loading2:true,
-      loading3:false,
-      message:'hi'
+      selectedTab:'sports'
+      // loading1: false,
+      // loading2:true,
+      // loading3:false,
+      // message:'hi'
     }
   },
   created() {
@@ -109,6 +125,10 @@ export default {
   },
 
   methods: {
+    yyy(data){
+      console.log('yyy')
+      console.log(data)
+    },
     showToast1() {
       this.showToast('top')
     },

@@ -12,6 +12,12 @@ import Layout from './layout'
 import Sider from './sider'
 import Toast  from  './toast'
 import plugin from './plugin'
+import Tabs from './tabs'
+import TabsHead from './tabs-head'
+import TabsItem from './tabs-item'
+import TabsPane from './tabs-pane'
+import TabsBody from './tabs-body'
+
 
 Vue.config.productionTip = false
 Vue.component('g-icon',Icon)
@@ -26,6 +32,11 @@ Vue.component('g-layout',Layout)
 Vue.component('g-sider',Sider)
 Vue.component('g-toast',Toast)
 Vue.use(plugin)
+Vue.component('g-tabs',Tabs)
+Vue.component('g-tabs-head',TabsHead)
+Vue.component('g-tabs-pane',TabsPane)
+Vue.component('g-tabs-item',TabsItem)
+Vue.component('g-tabs-body',TabsBody)
 
 new Vue({
   render: h => h(App),
