@@ -2,13 +2,13 @@
   <div id="app" style="padding-top:100px;padding-left: 100px ">
     <g-popover>
       <template slot="content">
-        <div>asjk</div>
+        <div>asjkwwwwwwwww</div>
       </template>
         <button>点我</button>
     </g-popover>
     <g-popover>
       <template slot="content">
-        <div>sss</div>
+        <div>ssssssssssssssssssssssssss</div>
       </template>
       <button>点我</button>
     </g-popover>
