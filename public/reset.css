@@ -13,10 +13,10 @@
     --color:#333;
     --border-color:#999;
     --border-color-hover:#666;
-    margin:20px;
+    /*margin:20px;*/
 }
 #app{
-    margin:20px;
+    /*margin:20px;*/
 }
 body{font-size: var(--font-size);}
 .box{

@@ -30,9 +30,15 @@ name: "GULUTabs",
   }
   },
   mounted(){
-  this.eventBus.$emit('update:selected',this.selected)
-  // this.$emit('update:selected','这是this $emit 出来的数据')
-  //this.emit('update:selected','xxx')
+  this.$children.forEach((vm)=>{
+    if(vm.$options.name==='GULUTabsHead'){
+      vm.$children.forEach((childVm)=>{
+        if(childVm.$options.name==='GULUTabsItem'&& childVm.name===this.selected){
+          this.eventBus.$emit('update:selected',this.selected,childVm)
+        }
+      })
+    }
+  })
   }
 }
 </script>
