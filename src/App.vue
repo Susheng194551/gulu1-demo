@@ -1,19 +1,17 @@
 <template>
   <div id="app" style="padding-top:100px;padding-left: 100px ">
-    <div style="overflow: hidden; border: 1px solid green; padding: 5px">
     <g-popover>
       <template slot="content">
-        <div>asjkwwwwwwwww</div>
+        <div>popover内容popover内容</div>
       </template>
-        <button>点我</button>
+        <Button>点我</Button>
     </g-popover>
     <g-popover>
       <template slot="content">
-        <div>ssssssssssssssssssssssssss</div>
+        <div>ssssssssssssssssssssssssssssssssssssssssssss</div>
       </template>
-      <button>点我</button>
+      <Button>点我</Button>
     </g-popover>
-    </div>
 <!--    <g-tabs :selected.sync="selectedTab" @update:selected="yyy">-->
 <!--      <g-tabs-head>-->
 <!--        <template slot="actions">-->
@@ -121,7 +119,7 @@
 </template>
 
 <script>
-// import Button from './components/button'
+ import Button from './components/button'
 
 export default {
   name: 'App',
@@ -165,11 +163,12 @@ export default {
         autoClose: false,
       })
     }
-  }
+  },
+  components:{
+    Button
+  },
 }
-  // components:{
-  //   Button
-  //  },
+
   // methods:{
   //   inputChange(e){
   //     console.log(e.target.value)
