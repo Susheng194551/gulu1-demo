@@ -26,24 +26,20 @@ name: "GULUPopover",
   positionContent(){
     const {contentWrapper,triggerWrapper}=this.$refs
         document.body.appendChild(contentWrapper)
-        let {width,height,top,left}=triggerWrapper.getBoundingClientRect()
-        if(this.position==='top'){
-        contentWrapper.style.left=left+window.scrollX+'px'
-        contentWrapper.style.top=top+window.scrollY+'px'
-        }else if(this.position==='bottom'){
-        contentWrapper.style.left=left+window.scrollX+'px'
-        contentWrapper.style.top=top+height+window.scrollY+'px'
-        }else  if(this.position==='left'){
-          contentWrapper.style.left=left+window.scrollX+'px'
-          let {height:height2}=contentWrapper.getBoundingClientRect()
-          contentWrapper.style.top=top+window.scrollY+
-              (height-height2)/2+'px'
-        }else if(this.position==='right'){
-          contentWrapper.style.left=left+window.scrollX+width+'px'
-          let {height:height2}=contentWrapper.getBoundingClientRect()
-          contentWrapper.style.top=top+window.scrollY+
-              (height-height2)/2+'px'
-        }
+        const {width,height,top,left}=triggerWrapper.getBoundingClientRect()
+        const {height:height2}=contentWrapper.getBoundingClientRect()
+        let position={
+        top:{top:top+window.scrollY,left:left+window.scrollX},
+        bottom:{top:top+height+window.scrollY,left:left+window.scrollX},
+        left:{top:top+window.scrollY+ (height-height2)/2,
+          left:left+window.scrollX
+        },
+        right:{top:top+window.scrollY+ (height-height2)/2,
+          left:left+window.scrollX+width},
+}
+         contentWrapper.style.left=position[this.position].left+'px'
+         contentWrapper.style.top=position[this.position].top+'px'
+
         },
     onClickDocument (e){
       if(this.$refs.popover &&
@@ -74,9 +70,10 @@ name: "GULUPopover",
       }
     }
   }
-  }
-
 }
+}
+
+
 </script>
 
 <style scoped lang="scss">
