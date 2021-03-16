@@ -1,53 +1,58 @@
 <template>
-  <div id="app" style="padding-top:100px;padding-left: 100px ">
-    <g-popover position="bottom">
-      <template slot="content">
-        <div>popover内容popover内容</div>
-      </template>
-        <Button>点我</Button>
-    </g-popover>
-    <g-popover>
-      <template slot="content">
-        <div>ssssssssssssssssssssssssssssssssssssssssssss</div>
-      </template>
-      <Button>点我</Button>
-    </g-popover>
-    <g-popover position="left">
-      <template slot="content">
-        <div>popover内容popover内容</div>
-      </template>
-      <Button>点我</Button>
-    </g-popover>
-    <g-popover position="right">
-      <template slot="content">
-        <div>popover内容popover内容</div>
-      </template>
-      <Button>点我</Button>
-    </g-popover>
-    <g-popover position="bottom" trigger="hover">
-      <template slot="content">
-        <div>popover内容popover内容</div>
-      </template>
-      <Button>点我</Button>
-    </g-popover>
-    <g-popover trigger="hover">
-      <template slot="content">
-        <div>ssssssssssssssssssssssssssssssssssssssssssss</div>
-      </template>
-      <Button>点我</Button>
-    </g-popover>
-    <g-popover position="left" trigger="hover">
-      <template slot="content">
-        <div>popover内容popover内容</div>
-      </template>
-      <Button>点我</Button>
-    </g-popover>
-    <g-popover position="right" trigger="hover">
-      <template slot="content">
-        <div>popover内容popover内容</div>
-      </template>
-      <Button>点我</Button>
-    </g-popover>
+  <div id="app" style="padding:100px;">
+  <g-collapse>
+    <g-collapse-item title="标题一">内容1</g-collapse-item>
+    <g-collapse-item title="标题二">内容2</g-collapse-item>
+    <g-collapse-item title="标题三">内容3</g-collapse-item>
+  </g-collapse>
+<!--    <g-popover position="bottom">-->
+<!--      <template slot="content">-->
+<!--        <div>popover内容popover内容</div>-->
+<!--      </template>-->
+<!--        <Button>点我</Button>-->
+<!--    </g-popover>-->
+<!--    <g-popover>-->
+<!--      <template slot="content">-->
+<!--        <div>ssssssssssssssssssssssssssssssssssssssssssss</div>-->
+<!--      </template>-->
+<!--      <Button>点我</Button>-->
+<!--    </g-popover>-->
+<!--    <g-popover position="left">-->
+<!--      <template slot="content">-->
+<!--        <div>popover内容popover内容</div>-->
+<!--      </template>-->
+<!--      <Button>点我</Button>-->
+<!--    </g-popover>-->
+<!--    <g-popover position="right">-->
+<!--      <template slot="content">-->
+<!--        <div>popover内容popover内容</div>-->
+<!--      </template>-->
+<!--      <Button>点我</Button>-->
+<!--    </g-popover>-->
+<!--    <g-popover position="bottom" trigger="hover">-->
+<!--      <template slot="content">-->
+<!--        <div>popover内容popover内容</div>-->
+<!--      </template>-->
+<!--      <Button>点我</Button>-->
+<!--    </g-popover>-->
+<!--    <g-popover trigger="hover">-->
+<!--      <template slot="content">-->
+<!--        <div>ssssssssssssssssssssssssssssssssssssssssssss</div>-->
+<!--      </template>-->
+<!--      <Button>点我</Button>-->
+<!--    </g-popover>-->
+<!--    <g-popover position="left" trigger="hover">-->
+<!--      <template slot="content">-->
+<!--        <div>popover内容popover内容</div>-->
+<!--      </template>-->
+<!--      <Button>点我</Button>-->
+<!--    </g-popover>-->
+<!--    <g-popover position="right" trigger="hover">-->
+<!--      <template slot="content">-->
+<!--        <div>popover内容popover内容</div>-->
+<!--      </template>-->
+<!--      <Button>点我</Button>-->
+<!--    </g-popover>-->
 <!--    <g-tabs :selected.sync="selectedTab" @update:selected="yyy">-->
 <!--      <g-tabs-head>-->
 <!--        <template slot="actions">-->
@@ -155,7 +160,7 @@
 </template>
 
 <script>
- import Button from './components/button'
+ // import Button from './components/button'
 
 export default {
   name: 'App',
@@ -200,9 +205,9 @@ export default {
       })
     }
   },
-  components:{
-    Button
-  },
+  // components:{
+  //   Button
+  // },
 }
 
   // methods:{
