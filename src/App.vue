@@ -1,9 +1,9 @@
 <template>
   <div id="app" style="padding:100px;">
-  <g-collapse>
-    <g-collapse-item title="标题一">内容1</g-collapse-item>
-    <g-collapse-item title="标题二">内容2</g-collapse-item>
-    <g-collapse-item title="标题三">内容3</g-collapse-item>
+  <g-collapse selected="2">
+    <g-collapse-item title="标题一" name="1">内容1</g-collapse-item>
+    <g-collapse-item title="标题二" name="2">内容2</g-collapse-item>
+    <g-collapse-item title="标题三" name="3">内容3</g-collapse-item>
   </g-collapse>
 <!--    <g-popover position="bottom">-->
 <!--      <template slot="content">-->
