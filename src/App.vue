@@ -1,10 +1,11 @@
 <template>
   <div id="app" style="padding:100px;">
-  <g-collapse selected="2">
+  <g-collapse :selected.sync="selectedTab" single>
     <g-collapse-item title="标题一" name="1">内容1</g-collapse-item>
     <g-collapse-item title="标题二" name="2">内容2</g-collapse-item>
     <g-collapse-item title="标题三" name="3">内容3</g-collapse-item>
   </g-collapse>
+    {{selectedTab}}
 <!--    <g-popover position="bottom">-->
 <!--      <template slot="content">-->
 <!--        <div>popover内容popover内容</div>-->
@@ -166,7 +167,7 @@ export default {
   name: 'App',
   data:()=>{
     return{
-      selectedTab:'sports'
+      selectedTab:['2','1']
       // loading1: false,
       // loading2:true,
       // loading3:false,
