@@ -24,6 +24,30 @@
       </template>
       <Button>点我</Button>
     </g-popover>
+    <g-popover position="bottom" trigger="hover">
+      <template slot="content">
+        <div>popover内容popover内容</div>
+      </template>
+      <Button>点我</Button>
+    </g-popover>
+    <g-popover trigger="hover">
+      <template slot="content">
+        <div>ssssssssssssssssssssssssssssssssssssssssssss</div>
+      </template>
+      <Button>点我</Button>
+    </g-popover>
+    <g-popover position="left" trigger="hover">
+      <template slot="content">
+        <div>popover内容popover内容</div>
+      </template>
+      <Button>点我</Button>
+    </g-popover>
+    <g-popover position="right" trigger="hover">
+      <template slot="content">
+        <div>popover内容popover内容</div>
+      </template>
+      <Button>点我</Button>
+    </g-popover>
 <!--    <g-tabs :selected.sync="selectedTab" @update:selected="yyy">-->
 <!--      <g-tabs-head>-->
 <!--        <template slot="actions">-->
