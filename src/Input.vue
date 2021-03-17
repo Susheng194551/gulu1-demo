@@ -13,6 +13,7 @@
 </template>
 //change是事件名  $event传给这个事件接收者的第一个参数
 <script>
+
 import Icon from './icon.vue'
 export default {
   components:{Icon},

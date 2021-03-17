@@ -1,11 +1,15 @@
 <template>
-  <svg class="g-icon"><use :xlink:href="`#i${name}`"></use></svg>
+  <svg class="g-icon"><use :xlink:href="`#i${name}`" ></use></svg>
 </template>
 <script>
-
+import  './svg'
 export  default {
   name:'GULUIcon',
-  props:['name']
+  props:{
+    name: {
+      type: String
+    }
+  },
 
 }
 </script>
